@@ -1,4 +1,4 @@
-package com.princeton.week1;
+package com.princeton.week1.part1;
 
 public class QuickUnionUF {
     private int[] id;

@@ -1,38 +1,24 @@
-package com.princeton.week1;
+package com.princeton.week1.part1;
 
 /**
- * Find: takes time proportional to depth of p and q
- * Union: takes constant time, given roots
- *
- * Proposition. Depth of any node x is at most Log N.
- * Proof: depth of x increases by 1 when tree T1 containing x is merged into another tree T2
- * the size of the tree T1 at least doubles since |T2| >= |T1|
- * size of tree containing x can double at most Log N times.
+ * improvement 2 after weighted union find
  */
-public class QuickUnionUFWeighted {
-    private int[] id;
-    private int[] sz;
+public class QuickUnionUFPathCompression {
+    int[] id;
+    int[] sz;
 
-    /**
-     * Initializes in time O(N)
-     * @param N size of input data
-     */
-    public QuickUnionUFWeighted(int N) {
+    public QuickUnionUFPathCompression(int N) {
         id = new int[N];
         sz = new int[N];
         for (int i = 0; i < N; i++) {
             id[i] = i;
-            sz[i] =1;
+            sz[i] = 1;
         }
     }
 
-    /**
-     * find the root of the node in time O(Log N)
-     * @param i node index
-     * @return the index of the root
-     */
-    private int root(int i) {
-        while (i != id[i]) {
+    private int root(int i){
+        while (i != id[i]){
+            id[i] = id[id[i]]; //flattening more
             i = id[i];
         }
         return i;
