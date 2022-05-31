@@ -13,7 +13,7 @@ import java.util.Arrays;
  * (N-1) compares and 0 exchanges
  *
  * Worst Case: (Array is sorted in descending order and no duplicates), O(N^2)
- * (N^2/2) compares and (N^2/2) exchanges
+ * (N^2/2) compares and (N^2/2) exchanges = sum of 1 to N-1
  *
  * Partially sorted arrays are arrays for which the number of inversions is linear
  * i.e, no of inversions is <= cN
