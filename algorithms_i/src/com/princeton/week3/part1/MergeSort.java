@@ -9,7 +9,7 @@ public class MergeSort {
             return;
 
         int mid = lo + (hi - lo) / 2;
-        sort(a, aux, 0, mid);
+        sort(a, aux, lo, mid);
         sort(a, aux, mid + 1, hi);
 
         // improvement - the array is already sorted
