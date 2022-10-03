@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="collinear">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/algorithms_i/src/com/princeton/week3/part1/assignment/collinear.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

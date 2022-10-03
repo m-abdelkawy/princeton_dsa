@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="percolation-submit1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/algorithms_i/out/production/algorithms_i/com/princeton/week1/assignment/percolation-submit.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="queues1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/algorithms_i/out/production/algorithms_i/com/princeton/week2/part1/assignment/queues.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
